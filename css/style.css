@@ -18,6 +18,7 @@
   --gris20: #212429;
   --gris10: #616161;
   --negro: #000;
+  --amarilo: #FEC62E;
 }
 
 body{
@@ -60,3 +61,14 @@ h3{
   font-size: 1.5em;
 }
 
+pre{
+  background: var(--amarilo);
+}
+
+.hero{
+  background-image: linear-gradient(to top, rgba(255,255,255, .3) 0, transparent), url(../assets/patron.png);
+  /* background-repeat: no-repeat;
+  background-position: center; */
+  /* background-size: cover; */
+  height: 350px;
+}
