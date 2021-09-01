@@ -61,6 +61,26 @@ h3{
   font-size: 1.5em;
 }
 
+.section-content{
+  counter-reset: titleList;
+}
+
+.section-content h3{
+  counter-increment: titleList;
+}
+
+.section-content h3::before{
+  content: counter(titleList);
+}
+
+.section-content h3::after{
+  content:''; /*El content no maneja semantica*/
+  width: 80px;
+  height: 4px;
+  background: #424242;
+  display: block; /* Se debe modificar el display ya que viene por defecto inline y este no acepta el alto*/
+}
+
 pre{
   background: var(--amarilo);
 }
@@ -71,16 +91,4 @@ pre{
   background-position: center; */
   /* background-size: cover; */
   height: 350px;
-}
-
-h3::before{
-  content:'-';
-}
-
-h3::after{
-  content:''; /*El content no maneja semantica*/
-  width: 80px;
-  height: 4px;
-  background: black;
-  display: block; /* Se debe modificar el display ya que viene por defecto inline y este no acepta el ancho*/
 }
