@@ -1,3 +1,17 @@
+@font-face {
+  font-family: charter;
+  src: url('../fonts/Regular.otf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: charter;
+  src: url('../fonts/Bold.otf');
+  font-style: normal;
+  font-weight: bold;
+}
+
 :root{
   font-size: 16px;
   --gris30: #212121;
@@ -8,6 +22,7 @@
 
 body{
   color: var(--gris30);
+  font-family: charter;
 }
 
 a{
