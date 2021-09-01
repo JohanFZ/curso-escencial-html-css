@@ -22,7 +22,7 @@
 
 body{
   color: var(--gris30);
-  font-family: charter;
+  font-family: 'Roboto', sans-serif;
 }
 
 a{
